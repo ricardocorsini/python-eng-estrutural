@@ -99,6 +99,7 @@ extremos = CordMaxMin(momento, cortante,mmax,mmin,vmax,vmin)
 
 plt.figure (figsize=(15,10))
 plt.subplot(2, 1, 1)
+plt.title("Diagrama de Momento Fletor", fontsize=20, color='blue', loc='left')
 plt.plot ([0]*len(x), color="k")
 plt.fill (-momento, alpha=0.1)
 plt.plot (-momento, color="darkBlue")
@@ -136,8 +137,7 @@ for i in x:
 
 plt.vlines(x[0],0,cortante[0], color="darkBlue")
 plt.vlines(x[len(x)-1]*n, 0,cortante[len(x)-1], color = "darkBlue")
-
-
+plt.title("Diagrama de Esforço Cortante", fontsize=20, color='blue', loc='left')
 # plt.annotate('X= ' + str(np.round(extremos[3],2)) +  "m", xy=(extremos[3]*10, vmin), xytext=(extremos[3]*10, vmin +4),
 #            arrowprops=None)
 #plt.annotate('V= '+ str(np.round(cortante[0],1)) + "kN", xy=(1,1), xytext=(0.5,cortante[0]-cortante[0]/1.1),
