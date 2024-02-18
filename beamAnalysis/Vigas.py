@@ -1,4 +1,5 @@
 #Programa para cálculo de vigas bi apoiada
+#A unidade kN é ruim! Vamos substituir para kgf ou tf.
 
 import numpy as np
 import math
